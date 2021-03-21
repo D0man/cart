@@ -4,6 +4,7 @@ html {
   font-size: 100%;
   font-family: 'Source Sans Pro';
   background: $main-background;
+  color: $main-text-color;
 }
 .main {
   background: $transparent-background;
@@ -42,4 +43,18 @@ html {
   margin-bottom: rem(20px);
   padding-top: rem(28px);
   text-transform: uppercase;
+}
+.button {
+  color: $promotion-text-color;
+  background: linear-gradient(0deg, #7a3dc6 0%, #b65ae2 100%), #000000;
+  box-shadow: 0px 1px 3px $box-shadow-main;
+  border-radius: 2px;
+  width: rem(132px);
+  height: 43px;
+  line-height: 43px;
+  font-size: rem(14px);
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
 }

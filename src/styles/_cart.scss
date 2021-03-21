@@ -1,0 +1,116 @@
+.cart {
+  height: rem(59px);
+  max-height: 100%;
+  position: relative;
+  margin-right: rem(5px);
+}
+.cart-button {
+  background: $active-background;
+  height: rem(59px);
+  width: rem(58px);
+  text-align: center;
+  color: $secondary-text-color;
+  border: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+
+  svg {
+    fill: $title-text-color;
+  }
+}
+
+.cart-dropdown {
+  display: block;
+  position: absolute;
+  top: rem(59px);
+  right: 0;
+  width: rem(370px);
+  background-color: $active-background;
+  box-shadow: 0px 2px 10px $box-shadow-third;
+  z-index: 4;
+
+  &--active {
+    display: block;
+  }
+
+  &__header {
+    font-size: rem(15px);
+    line-height: rem(19px);
+    font-weight: 700;
+    height: rem(66px);
+    display: flex;
+    align-items: center;
+    padding: 0 rem(10px);
+    justify-content: space-around;
+  }
+
+  &__price {
+    margin-right: rem(8px);
+    margin-left: rem(40px);
+  }
+
+  &__clear {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    padding: rem(5px);
+    border: 1px solid $border-secondary-color;
+    border-left: 0;
+    border-right: 0;
+    position: relative;
+
+    & + & {
+      border-top: 0;
+    }
+  }
+
+  &__image {
+    width: rem(100px);
+    height: rem(60px);
+    margin-right: rem(10px);
+  }
+  &__title {
+    margin-top: rem(10px);
+    font-size: rem(14px);
+    font-weight: 600;
+    width: rem(215px);
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__remove {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    left: rem(115px);
+    bottom: rem(17px);
+    text-decoration: underline;
+    color: $main-text-color;
+    font-size: rem(13px);
+    font-weight: 400;
+    cursor: pointer;
+  }
+  &__item:hover &__remove {
+    display: block;
+  }
+
+  &__item-price {
+    color: $secondary-text-color;
+    font-size: rem(13px);
+    text-align: right;
+    font-weight: 600;
+    position: absolute;
+    z-index: 5;
+    right: rem(5px);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
