@@ -1,11 +1,14 @@
 @import 'utils';
 @import 'variables';
 html {
+  color: $main-text-color;
   height: 100%;
   font-size: 100%;
+  font-family: 'Source Sans Pro';
+  background: $main-background;
 }
 .main {
-  background-color: $active-background;
+  background: $transparent-background;
 }
 .container {
   margin: 0 auto;
@@ -16,4 +19,26 @@ html {
 .header {
   background: $header-background;
   height: rem(59px);
+  width: 100%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+.title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: rem(15px);
+  line-height: rem(19px);
+  margin-bottom: rem(20px);
+  padding-top: rem(28px);
+  text-transform: uppercase;
 }
