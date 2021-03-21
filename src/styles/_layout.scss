@@ -1,0 +1,19 @@
+@import 'utils';
+@import 'variables';
+html {
+  height: 100%;
+  font-size: 100%;
+}
+.main {
+  background-color: $active-background;
+}
+.container {
+  margin: 0 auto;
+  width: rem(1070px);
+  padding: 0 rem(5px);
+}
+
+.header {
+  background: $header-background;
+  height: rem(59px);
+}
