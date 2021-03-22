@@ -16,31 +16,19 @@
               <img src="/src/assets/images/logo.webp" alt="gog.com">
             </h1>
             <div class="cart">
-              <button class="cart-button">
+              <button class="cart-button js-cart-button">
                 <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path id="Shape" opacity="0.851" fill-rule="evenodd" clip-rule="evenodd" d="M16.52 1.577L14.97 1.515L12.841 10.285L12.363 11.009H3.11399L2.75199 10.285L0.937988 2.886L2.67699 2.778L4.37299 9.499H11.139L13.456 0.529L14.442 0L16.969 0.032L16.52 1.577ZM5.31299 7.625V7.25H10.437V7.625H5.31299ZM4.99999 5.219H10.875V5.594H4.99999V5.219ZM4.24999 3.188H11.437V3.563H4.24999V3.188ZM4.78799 12.035C5.60299 12.035 6.26299 12.698 6.26299 13.517C6.26299 14.336 5.60299 15 4.78799 15C3.97399 15 3.31399 14.336 3.31399 13.517C3.31399 12.698 3.97399 12.035 4.78799 12.035ZM10.93 12.035C11.744 12.035 12.404 12.698 12.404 13.517C12.404 14.336 11.744 15 10.93 15C10.115 15 9.45499 14.336 9.45499 13.517C9.45499 12.698 10.115 12.035 10.93 12.035Z"/>
                 </svg>
                 <span class="js-count"></span>
               </button>
-              <div class="cart-dropdown">
+              <div class="cart-dropdown  js-dropdown">
                 <div class="cart-dropdown__header">
                     <div><span class='js-count'>0</span> Items in Cart</div>
                     <div class="cart-dropdown__clear">
-                      <div class="cart-dropdown__price js-price">$15.97</div>
+                      <div class="cart-dropdown__price js-price">0</div>
                       <button class="button js-clear">Clear Cart</button>
                     </div>
-                </div>
-                <div class="cart-dropdown__item">
-                  <img class="cart-dropdown__image" src="/src/assets/images/assasins.webp" alt="assasin">
-                  <div class="cart-dropdown__title">Assasin</div>
-                  <div class="cart-dropdown__item-price">$9.99</div>
-                  <span class="cart-dropdown__remove js-remove">Remove</span>
-                </div>
-                <div class="cart-dropdown__item">
-                  <img class="cart-dropdown__image" src="/src/assets/images/assasins.webp" alt="assasin">
-                  <div class="cart-dropdown__title">Assasin</div>
-                  <div class="cart-dropdown__item-price">$9.99</div>
-                  <span class="cart-dropdown__remove js-remove">Remove</span>
                 </div>
               </div>
             </div>
@@ -56,18 +44,7 @@
           </div>
         </div>
         <div class="container container--content">
-          <ul class="games-list">
-            <div class="game">
-              <div class="game__image">
-                <img src="/src/assets/images/assasins.webp" alt="assasins creed">
-              </div>
-              <div class="game__info">
-                <div class="game__title">assassin’s creed: director’s cut</div>
-                <div class="game__tag game__tag--price">$9.99</div>
-                <div class="game__tag game__tag--promotion">50%</div>
-              </div>
-            </div>
-        </ul>
+          <ul class="games-list js-games"></ul>
         </div>
       </main>
     </div>

@@ -7,6 +7,7 @@
   height: rem(186px);
   background-color: $item-background-color;
   box-shadow: 0px 1px 5px $box-shadow-main;
+  position: relative;
 
   &__image {
     overflow: hidden;
@@ -28,7 +29,6 @@
 
   &__info {
     padding: rem(10px) rem(10px) rem(30px);
-    position: relative;
   }
   &__title {
     font-weight: 600;
@@ -47,6 +47,13 @@
     bottom: rem(7px);
     border: 1px solid $border-color;
     border-radius: 2px;
+    text-transform: uppercase;
+    font-size: rem(13px);
+    line-height: rem(22px);
+    font-weight: 600;
+    &:focus {
+      outline: 0;
+    }
 
     & + & {
       right: rem(58px);
@@ -66,9 +73,10 @@
       opacity: 0.5;
     }
 
-    &--cart + &,
-    &--owned + & {
+    &--cart ~ &,
+    &--owned ~ & {
       display: none;
+      pointer-events: none;
     }
   }
 }
