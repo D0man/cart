@@ -81,7 +81,6 @@ const removeItemFromCart = (event: any) => {
         cart = cart.filter(game => game.id !== id)
         const cartTagHolder = document.querySelector(`.game__tag[data-id="${id}"]`)?.parentElement
         const cartTag = cartTagHolder?.querySelector('.game__tag--cart')
-        console.log(cartTagHolder)
         if (cartTag){
             cartTagHolder?.removeChild(cartTag)
         }
